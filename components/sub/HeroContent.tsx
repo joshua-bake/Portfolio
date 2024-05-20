@@ -6,6 +6,8 @@ import Image from 'next/image'
 import { SparklesIcon } from '@heroicons/react/24/solid'
 import { TypeAnimation } from 'react-type-animation'
 
+//! Line 70 update image to be more revelant
+
 const HeroContent = () => {
     return (
         <motion.div
