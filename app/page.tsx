@@ -3,7 +3,6 @@ import Projects from "@/components/main/Projects";
 import Skills from "@/components/main/Skills";
 
 //! Add Email section
-// ? Deploy with Vercel
 // ? Update projects, footer, navbar, and about me section
 
 export default function Home() {
