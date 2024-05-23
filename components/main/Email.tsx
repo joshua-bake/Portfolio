@@ -39,7 +39,7 @@ const Contact: React.FC = () => {
             }
         } catch (err) {
             console.error('Error sending email:', err);
-            setError(err.message);
+            // setError(err.message);
         } finally {
             setLoading(false);
         }
