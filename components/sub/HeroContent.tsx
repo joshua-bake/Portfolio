@@ -30,8 +30,8 @@ const HeroContent = () => {
                                 1000,
                                 'Web Developer',
                                 1000,
-                                'Full Stack Engineer',
-                                1000
+                                // 'Full Stack Engineer',
+                                // 1000
                             ]}
                             wrapper="span"
                             speed={50}
@@ -54,7 +54,7 @@ const HeroContent = () => {
                     variants={slideInFromLeft(0.8)}
                     className='text-lg text-gray-400 my-5 max-w-[600px]'
                 >
-                    I&apos;m a Full Stack Software Engineer with experience in Website, Mobile, and Software Development. Check out my projects and skills.
+                    I&apos;m a Junior Full Stack Developer. Check out my projects and skills below.
                 </motion.p>
                 <motion.a
                     variants={slideInFromLeft(1)}
@@ -66,12 +66,12 @@ const HeroContent = () => {
             <motion.div
                 variants={slideInFromRight(0.8)}
                 className='w-full h-full flex justify-center items-center'>
-                <Image
+                {/* <Image
                     src='/mainIconsdark.svg' // ? Update image to something more revelant
                     alt='work icons'
                     height={650}
                     width={650}
-                />
+                /> */}
             </motion.div>
         </motion.div>
     )
