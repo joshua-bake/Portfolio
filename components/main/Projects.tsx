@@ -122,10 +122,10 @@ const Projects = () => {
                             imgUrl={project.imgUrl}
                             gitUrl={project.gitUrl}
                             previewUrl={project.previewUrl}
-                        // src={''}
-                        // tags={[]}
-                        // skill_name={''}
-                        // skill_img={''}
+                        src={''}
+                        tags={[]}
+                        skill_name={''}
+                        skill_img={''}
                         />
                     </motion.li>
                 ))}
