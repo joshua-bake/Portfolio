@@ -85,7 +85,7 @@ const Contact: React.FC = () => {
                                 id="email"
                                 required
                                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                                placeholder="jacob@google.com"
+                                placeholder="johndoe@johndoe.com"
                             />
                         </div>
                         <div className="mb-6">
