@@ -2,7 +2,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { slideInFromLeft, slideInFromRight, slideInFromTop, } from '@/utils/motion'
-import Image from 'next/image'
 import { SparklesIcon } from '@heroicons/react/24/solid'
 import { TypeAnimation } from 'react-type-animation'
 
@@ -17,15 +16,14 @@ const HeroContent = () => {
             <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
                 <motion.div
                     variants={slideInFromTop}
-                    className='Welcome-box py-[8px] px-[4px] border border-[#7042f88b] opacity-[0.9]'>
+                    className='Welcome-box  py-[8px] px-[4px] border border-[#7042f88b] opacity-[0.9]'>
                     <SparklesIcon className='text-[#b49bff] mr-[10px] h-20 w-20' />
-                    <h1 className='Welcome-text text-white text-6xl'><span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Hello, I&apos;m{' '}</span>
+                    <h1 className='Welcome-text text-white text-6xl'><span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Hello, I&apos;m a {' '}</span>
                         <br />
                         <TypeAnimation
                             sequence={[
-                                // Same substring at the start will only be typed out once, initially
                                 'Joshua',
-                                1000, // wait 1s before replacing "Mice" with "Hamsters"
+                                1000,
                                 'Software Developer',
                                 1000,
                                 'Web Developer',
@@ -35,7 +33,7 @@ const HeroContent = () => {
                             ]}
                             wrapper="span"
                             speed={50}
-
+                            className='sm:animate-none'
                             repeat={Infinity}
                         /></h1>
                 </motion.div>
