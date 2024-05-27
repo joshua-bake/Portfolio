@@ -54,12 +54,12 @@ const HeroContent = () => {
                 >
                     I&apos;m a Junior Full Stack Developer. Check out my projects and skills below.
                 </motion.p>
-                <motion.a
+                {/* <motion.a
                     variants={slideInFromLeft(1)}
                     className='py-3 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]'
                 >
                     Learn More!
-                </motion.a>
+                </motion.a> */}
             </div>
             <motion.div
                 variants={slideInFromRight(0.8)}
