@@ -1,6 +1,9 @@
 'use client'
 import React from "react";
 import { RxGithubLogo, RxLinkedinLogo } from 'react-icons/rx'
+import { MdOutlineMail } from "react-icons/md";
+
+const FROM_EMAIL = (process.env.FROM_EMAIL);
 
 const Navbar = () => {
 
@@ -46,6 +49,9 @@ const Navbar = () => {
                     ))} */}
                     <a target="_blank" href="https://github.com/joshua-bake" rel="noopener noreferrer" className='flex text-white flex-row items-center my-[15px] '><RxGithubLogo /><span className='text-[15px] ml-[6px]'>GitHub</span></a>
                     <a target="_blank" href="https://linkedin.com/in/joshuaj-baker" rel="noopener noreferrer" className='flex text-white flex-row items-center my-[15px] '><RxLinkedinLogo /><span className='text-[15px] ml-[6px]'>LinkedIn</span></a>
+                    <a target="_blank" href={`mailto:${FROM_EMAIL}`} rel="noopener noreferrer" className='flex text-white flex-row items-center my-[15px] '><MdOutlineMail /><span className='text-[15px] ml-[6px]'>Email Me</span></a>
+
+
                 </div>
             </div>
         </div>
