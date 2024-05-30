@@ -17,6 +17,3 @@ export default function Home() {
     </main>
   );
 }
-
-
-//? framer animation component, lower the star canvas elements, put canvas behind the elements. 

@@ -16,43 +16,44 @@ const HeroContent = () => {
             <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
                 <motion.div
                     variants={slideInFromTop}
-                    className='Welcome-box  py-[8px] px-[4px] border border-[#7042f88b] opacity-[0.9]'>
-                    <SparklesIcon className='text-[#b49bff] mr-[10px] h-20 w-20' />
-                    <h1 className='Welcome-text text-white text-6xl'><span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Hello, I&apos;m a {' '}</span>
+                    className="Welcome-box py-2 px-1 border border-[#7042f88b] opacity-90 sm:py-4 sm:px-6 md:py-6 md:px-6 lg:py-6 lg:px-8 xl:py-8 xl:px-6 w-full"
+                >
+                    <SparklesIcon className="text-[#b49bff] mr-2 h-6 w-10 sm:h-12 sm:w-12 sm:mr-4 md:h-14 md:w-14 md:mr-6 lg:h-16 lg:w-16 lg:mr-8 xl:h-20 xl:w-20 xl:mr-10" />
+                    <h1 className="Welcome-text text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-4xl w-full break-words">
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+                            Hello, I&apos;m{' '}
+                        </span>
                         <br />
-                        <TypeAnimation
-                            sequence={[
-                                'Joshua',
-                                1000,
-                                'Software Developer',
-                                1000,
-                                'Web Developer',
-                                1000,
-                                // 'Full Stack Engineer',
-                                // 1000
-                            ]}
-                            wrapper="span"
-                            speed={50}
-                            className='sm:animate-none'
-                            repeat={Infinity}
-                        /></h1>
+                        <div className="overflow-hidden">
+                            <TypeAnimation
+                                sequence={[
+                                    'Joshua',
+                                    1000,
+                                    'a Software Developer',
+                                    1000,
+                                    'a Web Developer',
+                                    1000,
+                                ]}
+                                wrapper="span"
+                                speed={50}
+                                className="inline-block"
+                                repeat={Infinity}
+                            />
+                        </div>
+                    </h1>
                 </motion.div>
-
                 <motion.div
                     variants={slideInFromLeft(0.5)}
-                    className='flex flex-col gap-6 mt-6 text-5xl font-bold text-white max-w-[600px] w-auto h-auto'
-                >
-                    <span>
-                        Providing
-                        <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'> the best </span>
-                        project experience
+                    className='flex flex-col gap-6 mt-6 text-2xl font-bold max-w-[600px] w-auto h-auto'>
+                    <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'> Hey there! I&apos;m a junior developer with a passion for coding and a love for video games. When I&apos;m not diving into code, you&apos;ll often find me immersed in the latest video game releases, exploring virtual worlds and mastering new challenges.
+                        <br />
                     </span>
                 </motion.div>
                 <motion.p
                     variants={slideInFromLeft(0.8)}
-                    className='text-lg text-gray-400 my-5 max-w-[600px]'
+                    className='flex flex-col gap-6 mt-6 text-2xl font-bold my-5 max-w-[600px] text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-purple-600'
                 >
-                    I&apos;m a Junior Full Stack Developer. Check out my projects and skills below.
+                    Beyond the screen, I cherish spending quality time with family and friends, whether it&apos;s exploring new places, trying out new restaurants, or simply enjoying each other&apos;s company.<br /><br /> I&apos;m on a mission to find my first professional role where I can combine my love for coding with my dedication to personal growth and making meaningful connections.
                 </motion.p>
                 {/* <motion.a
                     variants={slideInFromLeft(1)}
