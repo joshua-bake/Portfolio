@@ -22,12 +22,12 @@ const Navbar = () => {
                         height={70}
                         className="cursor-pointer hover:animate-slowspin"
                     />
-                    <span className="font-bold ml-[10px] hidden md:block text-gray-300">
+                    <span className="font-bold ml-[10px] text-xl hidden md:block text-gray-300">
                         Joshua Baker
                     </span>
                 </a>
                 <div className="hidden md:flex w-[700px] h-full flex-row items-center justify-between">
-                    <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-5 px-[20px] py-[10px] rounded-full text-gray-200">
+                    <div className="flex items-center justify-between w-full h-auto text-xl border border-[#7042f861] bg-[#0300145e] mr-5 px-[20px] py-[10px] rounded-full text-gray-200">
                         <a href="#about-me" className="cursor-pointer">
                             About Me
                         </a>
@@ -39,8 +39,8 @@ const Navbar = () => {
                         </a>
                     </div>
                 </div>
-                <div className="hidden md:flex w-[400px] h-full flex-row items-center justify-end">
-                    <div className="flex justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-2 px-[20px] py-[10px] rounded-full text-gray-200">
+                <div className="hidden md:flex w-[400px] h-full flex-row items-center justify-end text-xl">
+                    <div className="flex justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-2 px-[25px] py-[10px] rounded-full text-gray-200">
                         <a target="_blank" href={TO_GITHUB} rel="noopener noreferrer" className='flex flex-row items-center'><RxGithubLogo /><span className='ml-[6px]'>GitHub</span></a>
                         <a target="_blank" href={TO_LINKEDIN} rel="noopener noreferrer" className='flex flex-row items-center'><RxLinkedinLogo /><span className='ml-[6px]'>LinkedIn</span></a>
                         <a target="_blank" href={`mailto:${FROM_EMAIL}`} rel="noopener noreferrer" className='flex flex-row items-center'><MdOutlineMail /><span className='ml-[6px]'>Email Me</span></a>
