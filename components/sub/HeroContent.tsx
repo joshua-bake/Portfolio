@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { slideInFromLeft, slideInFromRight, slideInFromTop, } from '@/utils/motion'
 import { SparklesIcon } from '@heroicons/react/24/solid'
 import { TypeAnimation } from 'react-type-animation'
+import Image from 'next/image'
 
 //! Line 70 update image to be more revelant
 
@@ -46,27 +47,21 @@ const HeroContent = () => {
                     variants={slideInFromLeft(0.5)}
                     className='flex flex-col gap-6 mt-6 text-2xl font-bold max-w-[600px] w-auto h-auto'>
                     <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'> Hey there! I&apos;m a junior developer with a passion for coding and a love for video games. When I&apos;m not diving into code, you&apos;ll often find me immersed in the latest video game releases, exploring virtual worlds and mastering new challenges.
-                        <br />
+                        <br /> <br />
                     </span>
                 </motion.div>
                 <motion.p
                     variants={slideInFromLeft(0.8)}
                     className='flex flex-col gap-6 mt-6 text-2xl font-bold my-5 max-w-[600px] text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-purple-600'
                 >
-                    Beyond the screen, I cherish spending quality time with family and friends, whether it&apos;s exploring new places, trying out new restaurants, or simply enjoying each other&apos;s company.<br /><br /> I&apos;m on a mission to find my first professional role where I can combine my love for coding with my dedication to personal growth and making meaningful connections.
+                    I&apos;m on a mission to find a role where I can combine my love for coding whilst continuing to learning and making meaningful connections.
                 </motion.p>
-                {/* <motion.a
-                    variants={slideInFromLeft(1)}
-                    className='py-3 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]'
-                >
-                    Learn More!
-                </motion.a> */}
             </div>
             <motion.div
                 variants={slideInFromRight(0.8)}
                 className='w-full h-full flex justify-center items-center'>
                 {/* <Image
-                    src='/mainIconsdark.svg' // ? Update image to something more revelant
+                    src='/mainIconsdark.svg' 
                     alt='work icons'
                     height={650}
                     width={650}

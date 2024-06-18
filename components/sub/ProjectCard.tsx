@@ -14,12 +14,16 @@ interface IProjectCard {
 
 const ProjectCard = ({ title, description, imgUrl, gitUrl, previewUrl, techStack }: IProjectCard) => {
     return (
-        <div>
+        <div className='group relative inline-block overflow-hidden rounded border px-12 py-3 text-sm font-medium text-slate-800 hover:text-violet-600 focus:outline-none focus:ring active:bg-indigo-600'>
+            <span className="ease absolute left-0 top-0 h-0 w-0 border-t-2 border-violet-600 transition-all duration-200 group-hover:w-full"></span>
+            <span className="ease absolute right-0 top-0 h-0 w-0 border-r-2 border-violet-600 transition-all duration-200 group-hover:h-full"></span>
+            <span className="ease absolute bottom-0 right-0 h-0 w-0 border-b-2 border-violet-600 transition-all duration-200 group-hover:w-full"></span>
+            <span className="ease absolute bottom-0 left-0 h-0 w-0 border-l-2 border-violet-600 transition-all duration-200 group-hover:h-full"></span>
             <div
                 className="h-52 md:h-72 rounded-t-xl relative group"
                 style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}
             >
-                <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 ">
+                <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500">
                     <a
                         href={gitUrl}
                         target="_blank"
