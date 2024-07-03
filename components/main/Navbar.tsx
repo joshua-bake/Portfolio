@@ -12,7 +12,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="w-full h-[75px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-2">
+        <div className="w-full h-[75px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50">
             <div className="h-full flex flex-row items-center justify-between m-auto px-[10px]">
                 <a href="#about-me" className="h-auto w-auto flex flex-row items-center">
                     <Image
@@ -37,9 +37,10 @@ const Navbar = () => {
                         <a href="#projects" className="cursor-pointer">
                             Projects
                         </a>
+                        {/* <a href="#experience" className="cursor-pointer">Experience</a> */}
                     </div>
                 </div>
-                <div className="hidden md:flex w-[400px] h-full flex-row items-center justify-end text-xl">
+                <div className="hidden md:flex w-[500px] h-full flex-row items-center justify-end text-xl">
                     <div className="flex justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-2 px-[25px] py-[10px] rounded-full text-gray-200">
                         <a target="_blank" href={TO_GITHUB} rel="noopener noreferrer" className='flex flex-row items-center'><RxGithubLogo /><span className='ml-[6px]'>GitHub</span></a>
                         <a target="_blank" href={TO_LINKEDIN} rel="noopener noreferrer" className='flex flex-row items-center'><RxLinkedinLogo /><span className='ml-[6px]'>LinkedIn</span></a>
