@@ -22,8 +22,8 @@ const Footer = () => {
                         <a target="_blank" href={TO_LINKEDIN} rel="noopener noreferrer" className='flex text-white text-xl flex-row items-center my-[15px] '><RxLinkedinLogo /><span className='text-[15px] ml-[6px]'>LinkedIn</span></a>
                     </div>
                 </div>
-                <div className='mb-[20px] mt-2 text-[15px] text-center'>
-                    &copy;  ItsJoshuaBaker. All rights reserved
+                <div className='mb-[20px] mt-2 py-2 text-[15px] text-center'>
+                    &copy;  2024 ItsJoshuaBaker. All rights reserved
                 </div>
             </div>
         </div>

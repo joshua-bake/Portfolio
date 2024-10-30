@@ -280,6 +280,13 @@ export const Other_skill = [
   // },
 ];
 
+export const GitHub_data = [
+{
+  name: "GitHub Picture",
+  Image: "/GitHub_Profile_Picture.jpg",
+}
+];
+
 export const projectsData = [
   {
     id: 1,

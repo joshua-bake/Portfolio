@@ -5,6 +5,7 @@ import { slideInFromLeft, slideInFromRight, slideInFromTop, } from '@/utils/moti
 import { SparklesIcon } from '@heroicons/react/24/solid'
 import { TypeAnimation } from 'react-type-animation'
 import Image from 'next/image'
+import { GitHub_data } from '@/constants'
 
 //! Line 70 update image to be more revelant
 
@@ -60,12 +61,21 @@ const HeroContent = () => {
             <motion.div
                 variants={slideInFromRight(0.8)}
                 className='w-full h-full flex justify-center items-center'>
-                {/* <Image
-                    src='/mainIconsdark.svg' 
-                    alt='work icons'
-                    height={650}
-                    width={650}
-                /> */}
+                <div className="flex flex-wrap">
+                    {GitHub_data.map((data, index) => {
+                        return <div key={index} className="div flex">
+                            <Image
+                                src={data.Image}
+                                alt={data.name}
+                                height={450}
+                                width={450}
+                                className='rounded-full'
+                            />
+                        </div>
+                    })}
+
+                </div>
+
             </motion.div>
         </motion.div>
     )
