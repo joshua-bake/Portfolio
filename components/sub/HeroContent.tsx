@@ -7,8 +7,6 @@ import { TypeAnimation } from 'react-type-animation'
 import Image from 'next/image'
 import { GitHub_data } from '@/constants'
 
-//! Line 70 update image to be more revelant
-
 const HeroContent = () => {
     return (
         <motion.div
@@ -31,7 +29,7 @@ const HeroContent = () => {
                                 sequence={[
                                     'Joshua',
                                     1000,
-                                    'a Software Developer',
+                                    'a React Full-Stack Developer',
                                     1000,
                                     'a Web Developer',
                                     1000,
@@ -47,7 +45,7 @@ const HeroContent = () => {
                 <motion.div
                     variants={slideInFromLeft(0.5)}
                     className='flex flex-col gap-6 mt-6 text-2xl font-bold max-w-[600px] w-auto h-auto'>
-                    <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'> Hey there! I&apos;m a junior developer with a passion for coding and a love for video games. When I&apos;m not diving into code, you&apos;ll often find me immersed in the latest video game releases, exploring virtual worlds and mastering new challenges.
+                    <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'> Hey there! I&apos;m a junior developer who loves taking an idea or thought and building it from scratch. I enjoy tackling problems, finding creative solutions, and learning new technologies along the way. When I&apos;m not programming, you&apos;ll often find me immersed in my hobbies of playing video games, learning an instrument, consuming car content or simply leveling up myself.
                         <br /> <br />
                     </span>
                 </motion.div>
@@ -55,7 +53,7 @@ const HeroContent = () => {
                     variants={slideInFromLeft(0.8)}
                     className='flex flex-col gap-6 mt-6 text-2xl font-bold my-5 max-w-[600px] text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-purple-600'
                 >
-                    I&apos;m on a mission to find a role where I can combine my love for coding whilst continuing to learning and making meaningful connections.
+                    I&apos;m on a mission to find a role where I can combine my love for programming whilst continuing to learn and solve real world problems. If you&apos;d like to connect, please don&apos;t hesitate to reach out!
                 </motion.p>
             </div>
             <motion.div
@@ -73,9 +71,7 @@ const HeroContent = () => {
                             />
                         </div>
                     })}
-
                 </div>
-
             </motion.div>
         </motion.div>
     )

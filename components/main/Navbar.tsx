@@ -4,9 +4,9 @@ import { RxGithubLogo, RxLinkedinLogo } from 'react-icons/rx'
 import { MdOutlineMail } from "react-icons/md"
 import Image from 'next/image'
 
-const FROM_EMAIL = (process.env.FROM_EMAIL);
-const TO_LINKEDIN = (process.env.TO_LINKEDIN)
-const TO_GITHUB = (process.env.TO_GITHUB)
+const FROM_EMAIL = (process.env.FROM_EMAIL)
+const TO_LINKEDIN = (process.env.NEXT_PUBLIC_TO_LINKEDIN)
+const TO_GITHUB = (process.env.NEXT_PUBLIC_TO_GITHUB)
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);

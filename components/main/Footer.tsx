@@ -4,9 +4,9 @@ import { RxGithubLogo, RxLinkedinLogo } from 'react-icons/rx'
 
 const Footer = () => {
 
-    const FROM_EMAIL = (process.env.FROM_EMAIL);
-    const TO_LINKEDIN = (process.env.TO_LINKEDIN)
-    const TO_GITHUB = (process.env.TO_GITHUB)
+    const FROM_EMAIL = (process.env.FROM_EMAIL)
+    const TO_LINKEDIN = (process.env.NEXT_PUBLIC_TO_LINKEDIN)
+    const TO_GITHUB = (process.env.NEXT_PUBLIC_TO_GITHUB)
 
     return (
         <div className="w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px]">
@@ -23,7 +23,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='mb-[20px] mt-2 py-2 text-[15px] text-center'>
-                    &copy;  2024 ItsJoshuaBaker. All rights reserved
+                    &copy;  2025 ItsJoshuaBaker. All Rights Reserved
                 </div>
             </div>
         </div>
