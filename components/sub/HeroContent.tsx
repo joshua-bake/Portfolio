@@ -31,7 +31,7 @@ const HeroContent = () => {
                                     1000,
                                     'a React Full-Stack Developer',
                                     1000,
-                                    'a Web Developer',
+                                    'a Tech Enthusiast',
                                     1000,
                                 ]}
                                 wrapper="span"
